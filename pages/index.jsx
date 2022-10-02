@@ -113,7 +113,7 @@ export default function Home() {
           >
             Smart Invoice Documentation
           </Heading>
-          <NextLink href="/getting-started" passHref>
+          <NextLink href="/docs/introducing-smart-invoice" passHref>
             <Button
               background="blue.1"
               _hover={{ background: 'blue.hover.1' }}
