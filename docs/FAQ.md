@@ -5,7 +5,7 @@ title: FAQ
 <h4><details>
 <summary> What is Lock? (CLIENT/PROVIDER) </summary>
 
-<p>&nbsp;</p>
+<!-- <p>&nbsp;</p> -->
 
 ###### Lock is a feature that allows clients and providers to lock the funds deposited into their smart invoice, triggering arbitration.
 
@@ -18,7 +18,7 @@ title: FAQ
 <h4><details>
 <summary> What is Arbitration? (CLIENT/PROVIDER) </summary>
 
-<p>&nbsp;</p>
+<!-- <p>&nbsp;</p> -->
 
 ###### Arbitration is triggered by either the client or provider locking funds held by their smart invoice. Arbitration is the process of resolving a dispute between a client and a provider, and it is facilitated by a third-party adjudicator.
 
@@ -27,7 +27,7 @@ title: FAQ
 <h4><details>
 <summary> How does the dispute resolution process work? (CLIENT/PROVIDER) </summary>
 
-<p>&nbsp;</p>
+<!-- <p>&nbsp;</p> -->
 
 ###### Lock triggers the arbitration provider (i.e., LexDAO or Custom) to review and resolve the dispute.
 
@@ -38,7 +38,7 @@ title: FAQ
 <h4><details>
 <summary>How is Deposit different from Release? (CLIENT/PROVIDER)</summary>
 
-<p>&nbsp;</p>
+<!-- <p>&nbsp;</p> -->
 
 ###### Deposit is a function that allows the client to deposit funds into the milestone(s), and before or after the milestone is completed, the client can use the release function to release the funds to the provider for their service. In order to release funds, the client must first make a deposit!
 
@@ -47,7 +47,7 @@ title: FAQ
 <h4><details>
 <summary>Why can’t I release or withdraw my payment? (CLIENT)</summary>
 
-<p>&nbsp;</p>
+<!-- <p>&nbsp;</p> -->
 
 ###### In order to release or withdraw your payment, first you will want to navigate to "view existing invoice" and check the status shown in the right column next to your smart invoice. If the status of your smart invoice shows:
 
@@ -60,7 +60,7 @@ title: FAQ
 <h4><details>
 <summary>Can I make multiple payments? (through “deposit” or “release”) to the provider with one transaction? (CLIENT)</summary>
 
-<p>&nbsp;</p>
+<!-- <p>&nbsp;</p> -->
 
 ###### Yes, you can execute one transaction for all milestone deposits and releases respectivley.
 
@@ -69,7 +69,7 @@ title: FAQ
 <h4><details>
 <summary>What statuses can an invoice have? (CLIENT/PROVIDER)</summary>
 
-<p>&nbsp;</p>
+<!-- <p>&nbsp;</p> -->
 
 1. Awaiting Deposit
 2. Funded
@@ -82,7 +82,7 @@ title: FAQ
 <h4><details>
 <summary>What are the supported networks on Smart Invoice? (CLIENT/PROVIDER)</summary>
 
-<p>&nbsp;</p>
+<!-- <p>&nbsp;</p> -->
 
 1. Ethereum Mainnet
 2. xDai Chain

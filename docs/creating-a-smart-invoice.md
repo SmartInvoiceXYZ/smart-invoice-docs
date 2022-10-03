@@ -16,7 +16,7 @@ Here you will enter your project’s details in sequential order:
 <h4><details>
 <summary> Mini Glossary</summary>
 
-<p>&nbsp;</p>
+<!-- <p>&nbsp;</p> -->
 
 ###### Project Name or ID - The name of your project
 
@@ -30,7 +30,7 @@ Here you will enter your project’s details in sequential order:
 
 <h4><details>
 <summary> What is Safety Valve and Why is it Important?  </summary>    
-<p>&nbsp;</p>
+<!-- <p>&nbsp;</p> -->
 
 ###### Safety Valve is a built in function that allows the client to withdraw funds from the contract on the date specified in the date entry field. This can be a useful feature in the scenario that a provider goes unresponsive or bails on the project, in which case the client can withdraw all funds deposited into smart invoice on or after the Safety Valve date.
 
@@ -54,7 +54,7 @@ In this step you will enter the following payment details:
 <h4><details>
 <summary> Mini Glossary</summary>
 
-<p>&nbsp;</p>
+<!-- <p>&nbsp;</p> -->
 
 ###### Client Address - Address the client will use to send funds to smart invoice
 

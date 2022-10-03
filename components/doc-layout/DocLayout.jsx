@@ -1,14 +1,59 @@
-import { Box, Flex, Link, VStack } from '@chakra-ui/react';
+import {
+  Flex,
+  Link,
+  VStack,
+  Drawer,
+  DrawerBody,
+  DrawerFooter,
+  DrawerHeader,
+  DrawerOverlay,
+  DrawerContent,
+  DrawerCloseButton,
+  useDisclosure,
+  Button,
+  Text
+} from '@chakra-ui/react';
 import Head from 'next/head';
 import Script from 'next/script';
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
 import { DocFooter } from './DocFooter';
 import { NavBar } from '../layout/NavBar';
 import NextLink from 'next/link';
+import { docV2Menu } from '../../sidebars';
+import { useRouter } from 'next/router';
 
 
-export function DocLayout({ children, metatags, title, docs, active }) {
+export function DocLayout({ children, metatags, title, active }) {
+  const [mobile, setMobile] = useState(true)
+  const [category, setCategory] = useState('')
+  const router = useRouter()
+
+  const { isOpen, onOpen, onClose } = useDisclosure()
+  const mobileMenuBtnRef = React.useRef()
+
+  useEffect(() => {
+    if (window) {
+      toggleMobileMode()
+      window.addEventListener('resize', toggleMobileMode)
+    }
+  })
+
+  useEffect(() => getCategory(), [router.pathname])
+
+  function toggleMobileMode() {
+    if (window.innerWidth < 900) {
+      setMobile(true)
+    } else {
+      setMobile(false)
+    }
+  }
+
+  function getCategory() {
+    const docMenuItem = docV2Menu.find(item => router.pathname.includes(item.path))
+    setCategory(docMenuItem.category)
+  }
+
   return (
     <Flex direction="column" minHeight="100vh">
       <Head>
@@ -37,26 +82,136 @@ export function DocLayout({ children, metatags, title, docs, active }) {
       />
 
       <NavBar />
-      <Flex flexGrow={1} paddingY={10}>
-        <VStack align='flex-start' padding={2}>
-          {docs.map(doc => (
-            <NextLink key={doc.slug} href={`/docs/${doc.slug}`} passHref>
-              <Link
-                _hover={{ color: 'blue.1', background: 'gray.background' }}
-                paddingY={1}
-                paddingX={6}
-                width='100%'
-                color={(active === doc.slug) && 'blue.1'}
-                background={(active === doc.slug) && 'gray.background'}
-                borderRadius={8}
-              >
-                {doc.title}
-              </Link>
-            </NextLink>
-          ))}
-        </VStack>
-        <Box flexGrow={1}>{children}</Box>
-      </Flex>
+      {mobile ? (
+        <Flex direction='column' flexGrow={1} paddingY={6} paddingX={4} gap={4}>
+          <Button
+            ref={mobileMenuBtnRef}
+            background="white"
+            textColor='blue.1'
+            borderColor='blue.1'
+            borderWidth={2}
+            borderRadius={8}
+            paddingY={6}
+            _hover={{ background: 'gray.background' }}
+            onClick={onOpen}
+          >
+            View All Documentation
+          </Button>
+          <Drawer
+            isOpen={isOpen}
+            placement='left'
+            onClose={onClose}
+            finalFocusRef={mobileMenuBtnRef}
+          >
+            <DrawerOverlay />
+            <DrawerContent background="white">
+              <DrawerCloseButton />
+              <DrawerHeader>Documentation</DrawerHeader>
+
+              <DrawerBody>
+                <VStack align='flex-start' width='100%'>
+                  {docV2Menu.map((item, i) => (
+                    <>
+                    <NextLink key={`${item.path}-${i}`} href={`/${item.path}/${item.topics[0].slug}`} passHref>
+                      <Link
+                        _hover={{ color: 'blue.1', background: 'gray.background' }}
+                        paddingY={1}
+                        paddingX={6}
+                        width='100%'
+                        borderRadius={8}
+                        fontWeight='bold'
+                        onClick={onClose}
+                      >
+                        {item.category}
+                      </Link>
+                    </NextLink>
+                    {router.pathname.includes(item.path) && (
+                      <VStack align='flex-start' paddingLeft={4} width='100%'>
+                        {item.topics.map(topic => (
+                          <NextLink key={`${topic.slug}`} href={`/${item.path}/${topic.slug}`} passHref>
+                            <Link
+                              _hover={{ color: 'blue.1', background: 'gray.background' }}
+                              paddingY={1}
+                              paddingX={6}
+                              width='100%'
+                              color={(active === topic.slug) && 'blue.1'}
+                              background={(active === topic.slug) && 'gray.background'}
+                              borderRadius={8}
+                              onClick={onClose}
+                            >
+                              {topic.title}
+                            </Link>
+                          </NextLink>
+                        ))}
+                      </VStack>
+                    )}
+                    </>
+                  ))}
+                </VStack>
+              </DrawerBody>
+
+              <DrawerFooter>
+                <Button
+                  onClick={onClose}
+                  background="transparent"
+                  borderColor='blue.1'
+                  borderWidth={2}
+                  textColor="blue.1"
+                  borderRadius={6}
+                  _hover={{ background: 'gray.background' }}
+                >
+                  Close
+                </Button>
+              </DrawerFooter>
+            </DrawerContent>
+          </Drawer>
+          <Text fontWeight='bold' textColor='gray.dark'>
+            {category}
+          </Text>
+          {children}
+        </Flex>
+      ) : (
+        <Flex flexGrow={1} paddingY={10}>
+          <VStack align='flex-start' padding={2} width={350} minHeight='100vh' overflowY='auto'>
+            {docV2Menu.map((item, i) => (
+              <>
+              <NextLink key={`${item.path}-${i}`} href={`/${item.path}/${item.topics[0].slug}`} passHref>
+                <Link
+                  _hover={{ color: 'blue.1', background: 'gray.background' }}
+                  paddingY={1}
+                  paddingX={6}
+                  width='100%'
+                  borderRadius={8}
+                  fontWeight='bold'
+                >
+                  {item.category}
+                </Link>
+              </NextLink>
+              {router.pathname.includes(item.path) && (
+                <VStack align='flex-start' paddingLeft={4} width='100%'>
+                  {item.topics.map(topic => (
+                    <NextLink key={`${topic.slug}`} href={`/${item.path}/${topic.slug}`} passHref>
+                      <Link
+                        _hover={{ color: 'blue.1', background: 'gray.background' }}
+                        paddingY={1}
+                        paddingX={6}
+                        width='100%'
+                        color={(active === topic.slug) && 'blue.1'}
+                        background={(active === topic.slug) && 'gray.background'}
+                        borderRadius={8}
+                      >
+                        {topic.title}
+                      </Link>
+                    </NextLink>
+                  ))}
+                </VStack>
+              )}
+              </>
+            ))}
+          </VStack>
+          <Flex justify='flex-start' flexGrow={1} paddingX={4}>{children}</Flex>
+        </Flex>
+      )}
       <DocFooter />
     </Flex>
   );

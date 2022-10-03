@@ -14,7 +14,7 @@ Smart Invoice is a sophisticated invoicing tool that facilitates payments betwee
 
 <h4><details>
 <summary> Who Should Use Smart Invoice? </summary>    
-<p>&nbsp;</p>
+<!-- <p>&nbsp;</p> -->
 
 ##### An example of two parties using Smart Invoice could be a service provider and a consumer/client who want:
 

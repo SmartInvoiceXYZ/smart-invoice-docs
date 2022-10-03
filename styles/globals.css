@@ -27,12 +27,13 @@ a {
   }
 }
 
-.doc-body ul,
-ol {
-  font-size: 110%;
-  line-height: 2.3;
-  font-weight: bold;
-  margin: 10px 0;
+.doc-body ul, ol {
+  margin-bottom: 20px;
+}
+
+.doc-body li {
+  margin-left: 20px;
+  margin-bottom: 8px;
 }
 
 .doc-body pre {
@@ -40,4 +41,21 @@ ol {
   padding: 20px;
   margin: 20px 0;
   line-height: 2.3;
+}
+
+.doc-body p {
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.doc-body summary {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.doc-body h3 {
+  font-size: 20px;
+  font-weight: bold;
 }
