@@ -12,22 +12,22 @@ This will open the multi-step form to create the invoice.
 
 In Step 1, you will need to add the project details for this invoice.
 
-Project Name or ID
+**Project Name or ID**
 Choose something easily identifiable by you & your client. This is how the invoice will appear on your sortable invoices list later.
 
-Link to Project Agreement
+**Link to Project Agreement**
 This agreement will be referenced if there is a payment dispute that goes to arbitration. Link a file that cannot be modified. This data will be stored publicly on IPFS and can be viewed by anyone. If you have privacy concerns, we recommend adding permissions to this agreement so it’s encrypted and only you and your client can view it.
 
-Project Description
+**Project Description**
 This brief description will help you and your client remember key project details in the future.
 
-Project Start Date
+**Project Start Date**
 This is the date you expect to begin work on this project.
 
-Expected End Date
+**Expected End Date**
 This is the date you expect to complete work on this project.
 
-Safety Valve Date<a href="#safety-valve-date" />
+**Safety Valve Date**<a id="#safety-valve-date"></a>
 If you do not complete this project by this date, your client can withdraw deposited funds in escrow after 00:00:00 GMT on this date. (Add extra time after the expected end date, in case things take longer to complete).
 
 <img src="/screenshots/smart-invoice-create-invoice-step2.png" />
