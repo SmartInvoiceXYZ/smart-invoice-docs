@@ -97,7 +97,8 @@ export default function Home() {
         >
           <Text
             textColor="blue.1"
-            fontSize={16}
+            // fontSize={16}
+            size="md"
             fontWeight={700}
             fontFamily="Poppins"
           >
@@ -105,7 +106,8 @@ export default function Home() {
           </Text>
           <Heading
             textColor="charcoal"
-            fontSize={50}
+            size="2xl"
+            // fontSize={50}
             fontWeight={700}
             fontFamily="Poppins"
             paddingBottom={6}
