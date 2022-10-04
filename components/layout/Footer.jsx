@@ -142,14 +142,14 @@ export function Footer({ ...props }) {
       >
         <NextImage src={logo} width={160} height={25.34} />
         <Flex gap={8} justify="center" align="center">
-          <NextLink href="/" passHref>
-            <Link>Home</Link>
+          <NextLink href="https://app.smartinvoice.xyz" target='_blank' passHref>
+            <Link isExternal>Website</Link>
           </NextLink>
-          <NextLink href="https://help.smartinvoice.xyz" target="_blank" passHref>
-            <Link target="_blank">Documentation</Link>
+          <NextLink href="/getting-started/what-is-smart-invoice" passHref>
+            <Link>Documentation</Link>
           </NextLink>
-          <NextLink href="https://help.smartinvoice.xyz/article/7-get-support" target="_blank" passHref>
-            <Link target="_blank">Support</Link>
+          <NextLink href="/misc/get-support" passHref>
+            <Link>Support</Link>
           </NextLink>
           <NextLink href="https://twitter.com/SmartInvoiceXYZ" target="_blank" passHref>
             <Link target="_blank">Twitter</Link>

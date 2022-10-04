@@ -83,7 +83,7 @@ export default function Home() {
   ]
 
   return (
-    <Layout title="Smart Invoice Docs" metatags={<HomeMeta/>}>
+    <Layout metatags={<HomeMeta/>}>
       {/* Hero Section */}
       <Flex justify="center" align="center" background="gray.background" width='100%'>
         <VStack
@@ -113,7 +113,7 @@ export default function Home() {
           >
             Smart Invoice Documentation
           </Heading>
-          <NextLink href="/docs/introducing-smart-invoice" passHref>
+          <NextLink href="/getting-started/what-is-smart-invoice" passHref>
             <Button
               background="blue.1"
               _hover={{ background: 'blue.hover.1' }}

@@ -1,10 +1,12 @@
-How to check the status of an invoice
+---
+title: How to check the status of an invoice
+---
 
 Once your wallet is connected to Smart Invoice, click the “Dashboard” link at the top of the page.
 
 This will display a list of all of your invoices.
 
-![]()
+<img src="/screenshots/smart-invoice-status.png" />
 
 Next to each invoice you will see the status of that invoice.
 

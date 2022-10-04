@@ -123,11 +123,11 @@ However, new, and even veteran users, are not often aware of what they are expli
 
 The below screenshot is from connecting to a web3 site. Read what permissions you are giving to the site with your connection.
 
-![]()
+<img src="/screenshots/smart-invoice-mm-security-1.png" />
 
 Likewise when signing a transaction, the wallet will tell you exactly what function you are interacting with on the contract.
 
-![]()
+<img src="/screenshots/smart-invoice-mm-security-2.png" />
 
 However, even at this level, there are attack vectors for unsuspecting users. Your wallet that interacts the most with the ecosystem should hold only enough crypto for transaction fees.
 
@@ -154,23 +154,23 @@ Metamask makes it very simple to add common ERC-20 tokens on mainnet.
 
 Make sure you are connected to Ethereum Mainnet.
 
-![]()
+<img src="/screenshots/smart-invoice-add-erc20-token-to-wallet-1.png" />
 
 Click on the assets tab. Scroll down and select ‘Import Tokens’.
 
-![]()
+<img src="/screenshots/smart-invoice-add-erc20-token-to-wallet-2.png" />
 
 Type in the token symbol for the token you want to add. Click on the desired token, then click Next.
 
-![]()
+<img src="/screenshots/smart-invoice-add-erc20-token-to-wallet-3.png" />
 
 Click ‘Import Tokens’.
 
-![]()
+<img src="/screenshots/smart-invoice-add-erc20-token-to-wallet-4.png" />
 
 Your selected token will now appear under the Assets tab.
 
-![]()
+<img src="/screenshots/smart-invoice-add-erc20-token-to-wallet-5.png" />
 
 Importing tokens on other networks (xDai, Rinkeby, etc…)
 
@@ -180,23 +180,23 @@ In this example we will be adding WXDAI to our wallet on the Gnosis chain.
 
 1) Navigate to the block explorer for Gnosis: https://blockscout.com/xdai/mainnet
 
-![]()
+<img src="/screenshots/smart-invoice-add-erc20-token-to-wallet-6.png" />
 
 2) Type in WXDAI in the search bar. Click on the result below: Wrapped XDAI.
 
-![]()
+<img src="/screenshots/smart-invoice-add-erc20-token-to-wallet-7.png" />
 
 3) Copy the token contract address: 0xe91d153e0b41518a2ce8dd3d7944fa863463a97d
 
-![]()
+<img src="/screenshots/smart-invoice-add-erc20-token-to-wallet-8.png" />
 
 5) Open Metamask. Confirm you are on the Gnosis chain. 
 
-![]()
+<img src="/screenshots/smart-invoice-add-erc20-token-to-wallet-9.png" />
 
 6) Click on the Assets tab and scroll down to Import Tokens.
 
-![]()
+<img src="/screenshots/smart-invoice-add-erc20-token-to-wallet-10.png" />
 
 7) Enter the required information. 
 
@@ -209,15 +209,15 @@ Enter 18 for ‘Token Decimal’. All tokens added with Smart Invoice will use 1
 
 Click ‘Add Custom Token’ after all information is added.
 
-![]()
+<img src="/screenshots/smart-invoice-add-erc20-token-to-wallet-10.png" />
 
 8) Click ‘Import Tokens’.
 
-![]()
+<img src="/screenshots/smart-invoice-add-erc20-token-to-wallet-11.png" />
 
 9) You now have access to your WXDAI in Metamask.
 
-![]()
+<img src="/screenshots/smart-invoice-add-erc20-token-to-wallet-12.png" />
 
 
 ### What is the safety valve date?

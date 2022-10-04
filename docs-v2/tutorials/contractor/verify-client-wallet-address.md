@@ -10,7 +10,7 @@ Before any deposits are allowed from any address except the client address, the 
 
 Before the client has verified their address, all other addresses will be unable to deposit on the invoice page:
 
-![]()
+<img src="/screenshots/smart-invoice-verfiy-client-wallet-address-1.png" />
 
 If you are the client, you must follow these steps to enable non-client deposits:
 
@@ -18,15 +18,14 @@ If you are the client, you must follow these steps to enable non-client deposits
 
 2) Click on ‘Enable Non-Client Account Deposits’.
 
-![]()
-
+<img src="/screenshots/smart-invoice-verfiy-client-wallet-address-2.png" />
 
 3) You will be prompted to sign a transaction from your wallet provider. The verify transaction uses the smallest possible amount of gas, so the transaction cost will be extremely small.  
 
 If you have successfully signed the transaction you will see the enable button change to a spinner:
 
-![]()
+<img src="/screenshots/smart-invoice-verfiy-client-wallet-address-3.png" />
 
 4) Once the transaction is confirmed on-chain, ‘Not Enabled’ will update to ‘Enabled!’. Non-client accounts can now deposit to the invoice contract.
 
-
+<img src="/screenshots/smart-invoice-verfiy-client-wallet-address-4.png" />

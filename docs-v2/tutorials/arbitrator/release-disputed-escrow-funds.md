@@ -4,7 +4,7 @@ title: How to release disputed escrow funds to the contractor or client
 
 From the individual invoice page, click ‘Resolve’. The dispute resolution modal will appear.
 
-![]()
+<img src="/screenshots/smart-invoice-release-disputed-funds-1.png" />
 
 From this modal you will detail your arbitration decision and divide the disputed amount according to your decision.
 

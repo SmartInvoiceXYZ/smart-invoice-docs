@@ -37,7 +37,7 @@ export async function getStaticProps({ params }) {
 
 export default function DocPage({ frontmatter, slug, content, docs }) {
   return (
-    <DocLayout docs={docs} active={slug}>
+    <DocLayout docs={docs} active={slug} title={frontmatter.title}>
       <Box maxWidth={700}>
         <Heading mb={8}>
           {frontmatter.title}

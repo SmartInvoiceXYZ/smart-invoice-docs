@@ -4,12 +4,11 @@ title: How to create an invoice
 
 Once your wallet is connected to Smart Invoice, click the “Create Invoice” button.
 
-![]()
-
+<img src="/screenshots/smart-invoice-welcome-screen.png" />
 
 This will open the multi-step form to create the invoice.
 
-![]()
+<img src="/screenshots/smart-invoice-create-invoice-step1.png" />
 
 In Step 1, you will need to add the project details for this invoice.
 
@@ -31,7 +30,7 @@ This is the date you expect to complete work on this project.
 Safety Valve Date
 If you do not complete this project by this date, your client can withdraw deposited funds in escrow after 00:00:00 GMT on this date. (Add extra time after the expected end date, in case things take longer to complete).
 
-![]()
+<img src="/screenshots/smart-invoice-create-invoice-step2.png" />
 
 In Step 2, you will add your payment details for the invoice.
 
@@ -59,7 +58,7 @@ If a disputed milestone payment goes to arbitration, 5% of that milestone’s es
 Tickbox
 If using LexDAO for arbitration, you will need to tick the box to accept their terms of service.
 
-![]()
+<img src="/screenshots/smart-invoice-create-invoice-step3.png" />
 
 In Step 3, you will list out the payment amount for each milestone.
 
@@ -67,7 +66,7 @@ If you need to add or remove payment milestones, click the back arrow at the top
 
 The total amount between these milestones must add up to the “Total Payment Due” in Step 2.
 
-![]()
+<img src="/screenshots/smart-invoice-create-invoice-step4.png" />
 
 In Step 4, you will create your invoice.
 
@@ -77,13 +76,13 @@ If you find any errors, go back to the previous steps and make the necessary mod
 
 When you are ready to create the invoice, click the “Create Invoice” button.
 
-![]()
+<img src="/screenshots/create-your-invoice-3.png" />
 
 A prompt will appear from your wallet (MetaMask or WalletConnect).
 
 Review the details and then click the “Confirm” button to finalize creation of your invoice on-chain. There will be a small gas fee to sign this transaction and complete the invoice.
 
-![]()
+<img src="/screenshots/smart-invoice-registration-received-2.png" />
 
 Within a few minutes the invoice will be created and registered by the system. 
 

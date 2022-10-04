@@ -1,11 +1,11 @@
 export function HomeMeta() {
   return (
     <>
-    <meta name="description" content="Free cryptocurrency invoicing and escrow software for freelancers. Securely accept payments in ETH, WETH, USDC, USDT, DAI, XDAI, WBTC, and many more tokens!"/>
+    <meta name="description" content="Have a question about Smart Invoice? Find the answer here."/>
     <meta name="keywords" content="online invoicing software, cryptocurrency invoicing, free invoicing, invoices, escrow, crypto escrow, crypto payments"/>
     <meta name="author" content="Smart Invoice"/>
-    <meta property="og:title" content="Crypto Invoicing & Escrow | Smart Invoice"/>
-    <meta property="og:description" content="Free cryptocurrency invoicing and escrow software for freelancers. Securely accept payments in ETH, WETH, USDC, USDT, DAI, XDAI, WBTC, and many more tokens!"/>
+    <meta property="og:title" content="Smart Invoice Documentation"/>
+    <meta property="og:description" content="Have a question about Smart Invoice? Find the answer here."/>
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Smart Invoice"/>
     <meta property="og:image" content="https://smartinvoice.xyz/meta/home-graphic.png"/>

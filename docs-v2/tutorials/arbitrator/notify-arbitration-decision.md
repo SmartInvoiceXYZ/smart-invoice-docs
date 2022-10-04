@@ -10,6 +10,6 @@ After the resolution transaction is confirmed, the invoice page will list the to
 
 **View transaction:** From this link, all parties can view the resolution transaction on the network’s block explorer.
 
-![]()
+<img src="/screenshots/smart-invoice-notify-of-arbitration-decision-1.png" />
 
 Currently there is no notification of the decision to the client and provider outside of the platform, although this is a projected future feature. You will need to message them directly.

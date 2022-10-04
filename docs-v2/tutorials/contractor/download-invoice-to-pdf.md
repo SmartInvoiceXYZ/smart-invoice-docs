@@ -6,7 +6,7 @@ Once your wallet is connected to Smart Invoice, click the “Dashboard” link a
 
 This will display a list of all of your invoices.
 
-![]()
+<img src="/screenshots/smart-invoice-download-pdf-from-dashboard.png" />
 
 Click the 3 dots next to your invoice in the “Action” column. 
 

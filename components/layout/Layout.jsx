@@ -6,13 +6,13 @@ import React from 'react';
 import { Footer } from './Footer';
 import { NavBar } from './NavBar';
 
-export function Layout({ children, metatags, title }) {
+export function Layout({ children, metatags }) {
   return (
     <Flex direction="column" minHeight="100vh">
       <Head>
         <meta charSet="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <title>{title}</title>
+        <title>Smart Invoice Documentation</title>
         {metatags}
         <link rel="icon" href="/logos/smart-invoice/icon-blue.svg" />
       </Head>
