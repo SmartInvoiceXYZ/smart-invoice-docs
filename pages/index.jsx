@@ -78,7 +78,7 @@ export default function Home() {
     },
     {
       content: 'Setting a safety valve date',
-      url: '/tutorials/contractor/how-to-create-an-invoice#safety-valve-date'
+      url: '/tutorials/contractor/how-to-create-an-invoice'
     },
   ]
 
