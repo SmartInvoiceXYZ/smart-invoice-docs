@@ -140,7 +140,7 @@ export default function Home() {
           width="100%"
           maxWidth={maxWidth}
         >
-          <Heading mb={2} textAlign='center'>
+          <Heading size="lg" mb={2} textAlign='center'>
             How Smart Invoice works
           </Heading>
           <Text textAlign="center">
