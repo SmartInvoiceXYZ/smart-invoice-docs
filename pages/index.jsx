@@ -33,12 +33,12 @@ export default function Home() {
     },
     {
       id: 'clients',
-      content: 'If you are a freelancer, watch the video below for a quided walkthrough of how Smart Invoice works, and how to create and manage your invoices.',
+      content: 'If you are a client using Smart Invoice, watch the video below to learn how this tool works, and how to fund and release your milestone payments.',
       video: 'https://www.youtube.com/embed/[id]'
     },
     {
       id: 'disputes',
-      content: 'If you are a freelancer, watch the video below for a quided walkthrough of how Smart Invoice works, and how to create and manage your invoices.',
+      content: 'If you are a freelancer or client that has a payment dispute, watch the video below for a walkthrough on how to send the dispute to arbitration.',
       video: 'https://www.youtube.com/embed/[id]'
     },
   ]
@@ -85,7 +85,7 @@ export default function Home() {
   return (
     <Layout metatags={<HomeMeta/>}>
       {/* Hero Section */}
-      <Flex justify="center" align="center" background="gray.background" width='100%'>
+      <Flex justify="center" align="center" background="gray.background" width='100%' overflowX='hidden'>
         <VStack
           paddingY={20}
           paddingX={8}
@@ -130,7 +130,7 @@ export default function Home() {
         </VStack>
       </Flex>
       {/* Video Tutorials */}
-      <Flex justify="center" align="center" background="white" width='100%'>
+      <Flex justify="center" align="center" background="white" width='100%' overflowX='hidden'>
         <Flex 
           direction="column"
           justify="center"
@@ -140,7 +140,7 @@ export default function Home() {
           width="100%"
           maxWidth={maxWidth}
         >
-          <Heading mb={2}>
+          <Heading mb={2} textAlign='center'>
             How Smart Invoice works
           </Heading>
           <Text textAlign="center">
@@ -188,7 +188,7 @@ export default function Home() {
         </Flex>
       </Flex>
       {/* Essential FAQs */}
-      <Flex justify="center" align="center" background="gray.background" width='100%'>
+      <Flex justify="center" align="center" background="gray.background" width='100%' overflowX='hidden'>
         <Flex 
           direction="column"
           justify="center"
@@ -200,7 +200,7 @@ export default function Home() {
           <Heading mb={10} textAlign={flexDirection === 'column' && 'center'}>
             Essential FAQs
           </Heading>
-          <Grid gridTemplateColumns={'repeat(auto-fit, minmax(400px, 1fr))'} rowGap={8}>
+          <Grid gridTemplateColumns={'repeat(auto-fit, minmax(350px, 1fr))'} rowGap={8}>
             {faqLinks.map((item, i) => (
               <GridItem key={i} display="flex" justifyContent={flexDirection === 'column' && 'center'}>
                 <NextLink href={item.url} passHref>
