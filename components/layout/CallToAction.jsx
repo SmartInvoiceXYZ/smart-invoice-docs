@@ -41,8 +41,8 @@ export function CallToAction({ ...props }) {
           <Text textColor="white" textAlign={flexDirection === 'column' && 'center'} maxWidth={400}>
             Access our help center to view all documentation articles.
           </Text>
-          <NextLink href='https://app.smartinvoice.xyz/' target="_blank" passHref>
-            <a target="_blank">
+          <NextLink href='/getting-started/what-is-smart-invoice' passHref>
+            <a>
               <Button
                 background="white"
                 textColor="gray.dark"
@@ -65,7 +65,7 @@ export function CallToAction({ ...props }) {
           <Text textColor="white" textAlign={flexDirection === 'column' && 'center'} maxWidth={400}>
             Still can’t figure it out? We are available in the product support channel in the RaidGuild DAO Discord.
           </Text>
-          <NextLink href='https://app.smartinvoice.xyz/' target="_blank" passHref>
+          <NextLink href='https://discord.gg/M2QaDPgKFR' target="_blank" passHref>
             <a target="_blank">
               <Button
                 background="white"

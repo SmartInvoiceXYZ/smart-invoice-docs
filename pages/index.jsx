@@ -46,39 +46,39 @@ export default function Home() {
   const faqLinks = [
     {
       content: 'Creating an invoice',
-      url: '#'
+      url: '/tutorials/contractor/how-to-create-an-invoice'
     },
     {
       content: 'View existing invoices',
-      url: '#'
+      url: '/tutorials/client/view-invoices'
     },
     {
       content: 'Locking a milestone for dispute',
-      url: '#'
+      url: '/tutorials/contractor/lock-milestone-and-request-arbitration'
     },
     {
       content: 'Adding new milestones to an invoice',
-      url: '#'
+      url: '/tutorials/contractor/add-more-milestones-to-existing-invoice'
     },
     {
       content: "Funding an invoice's escrow",
-      url: '#'
+      url: '/tutorials/client/deposit-funds'
     },
     {
       content: 'Choosing a custom arbitrator',
-      url: '#'
+      url: '/tutorials/contractor/custom-arbitrator'
     },
     {
       content: 'Downloading PDFs of your invoices',
-      url: '#'
+      url: '/tutorials/contractor/download-invoice-to-pdf'
     },
     {
       content: 'Releasing funds from escrow',
-      url: '#'
+      url: '/tutorials/client/release-escrow-funds-inside-milestone'
     },
     {
       content: 'Setting a safety valve date',
-      url: '#'
+      url: '/tutorials/contractor/how-to-create-an-invoice#safety-valve-date'
     },
   ]
 

@@ -27,7 +27,7 @@ This is the date you expect to begin work on this project.
 Expected End Date
 This is the date you expect to complete work on this project.
 
-Safety Valve Date
+Safety Valve Date<a href="#safety-valve-date" />
 If you do not complete this project by this date, your client can withdraw deposited funds in escrow after 00:00:00 GMT on this date. (Add extra time after the expected end date, in case things take longer to complete).
 
 <img src="/screenshots/smart-invoice-create-invoice-step2.png" />
