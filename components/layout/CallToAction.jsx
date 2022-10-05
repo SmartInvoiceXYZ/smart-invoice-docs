@@ -35,7 +35,7 @@ export function CallToAction({ ...props }) {
         {...props}
       >
         <Flex width={flexDirection === 'row' && '50%'} direction="column" align={flexDirection === 'column' ? 'center' : 'flex-start'}>
-          <Heading fontSize={50} fontWeight={700} textColor="white" textAlign={flexDirection === 'column' && 'center'} mb={4}>
+          <Heading size="2xl" fontWeight={700} textColor="white" textAlign={flexDirection === 'column' && 'center'} mb={4}>
             All help articles
           </Heading>
           <Text textColor="white" textAlign={flexDirection === 'column' && 'center'} maxWidth={400}>
@@ -59,7 +59,7 @@ export function CallToAction({ ...props }) {
           </NextLink>
         </Flex>
         <Flex width={flexDirection === 'row' && '50%'} direction="column" align={flexDirection === 'column' ? 'center' : 'flex-start'}>
-          <Heading fontSize={50} fontWeight={700} textColor="white" textAlign={flexDirection === 'column' && 'center'} mb={4}>
+          <Heading size="2xl" fontWeight={700} textColor="white" textAlign={flexDirection === 'column' && 'center'} mb={4}>
             Need more help?
           </Heading>
           <Text textColor="white" textAlign={flexDirection === 'column' && 'center'} maxWidth={400}>
