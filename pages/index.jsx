@@ -29,17 +29,17 @@ export default function Home() {
     {
       id: 'freelancers',
       content: 'If you are a freelancer, watch the video below for a quided walkthrough of how Smart Invoice works, and how to create and manage your invoices.',
-      video: 'https://www.youtube.com/embed/[id]'
+      video: 'https://www.youtube.com/embed/xqzR50gbfiM'
     },
     {
       id: 'clients',
       content: 'If you are a client using Smart Invoice, watch the video below to learn how this tool works, and how to fund and release your milestone payments.',
-      video: 'https://www.youtube.com/embed/[id]'
+      video: 'https://www.youtube.com/embed/we5qNro3oyc'
     },
     {
       id: 'disputes',
       content: 'If you are a freelancer or client that has a payment dispute, watch the video below for a walkthrough on how to send the dispute to arbitration.',
-      video: 'https://www.youtube.com/embed/[id]'
+      video: 'https://www.youtube.com/embed/s1eA57IYCCw'
     },
   ]
 
