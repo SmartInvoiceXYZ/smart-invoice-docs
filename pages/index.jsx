@@ -38,7 +38,7 @@ export default function Home() {
     },
     {
       id: 'disputes',
-      content: 'If you are a freelancer or client that has a payment dispute, watch the video below for a walkthrough on how to send the dispute to arbitration.',
+      content: 'If you are an arbitrator on an invoice created with Smart Invoice, watch the video below for a walkthrough of how to resolve a payment dispute triggered by the freelancer or client.',
       video: 'https://www.youtube.com/embed/s1eA57IYCCw'
     },
   ]
