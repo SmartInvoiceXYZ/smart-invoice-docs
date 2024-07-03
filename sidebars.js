@@ -1,15 +1,4 @@
-export const docV1Menu = [
-  'introducing-smart-invoice',
-  'how-does-it-work',
-  'creating-a-smart-invoice',
-  'complete-invoice',
-  'view-existing-invoice',
-  'deposit-or-release',
-  'FAQ',
-  'glossary'
-]
-
-export const docV2Menu = [
+export const docV3Menu = [
   {
     category: 'Getting Started',
     path: 'getting-started',
@@ -161,7 +150,7 @@ export const docV2Menu = [
       },
       {
         title: 'Arbitration and Escrow Infrastructure',
-        slug: 'arbitration_infra'
+        slug: 'arbitration-infra'
       }
     ]
 
