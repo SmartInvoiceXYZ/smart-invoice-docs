@@ -83,7 +83,7 @@ export default function Home() {
   ]
 
   return (
-    <Layout metatags={<HomeMeta/>}>
+    <Layout metatags={<HomeMeta />}>
       {/* Hero Section */}
       <Flex justify="center" align="center" background="gray.background" width='100%' overflowX='hidden'>
         <VStack
@@ -133,7 +133,7 @@ export default function Home() {
       </Flex>
       {/* Video Tutorials */}
       <Flex justify="center" align="center" background="white" width='100%' overflowX='hidden'>
-        <Flex 
+        <Flex
           direction="column"
           justify="center"
           align="center"
@@ -191,7 +191,7 @@ export default function Home() {
       </Flex>
       {/* Essential FAQs */}
       <Flex justify="center" align="center" background="gray.background" width='100%' overflowX='hidden'>
-        <Flex 
+        <Flex
           direction="column"
           justify="center"
           paddingY={16}

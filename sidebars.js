@@ -121,22 +121,50 @@ export const docV2Menu = [
     ]
   },
   {
-    category: 'Arbitrator Tutorials',
-    path: 'tutorials/arbitrator',
+    category: 'Arbitration Tutorials',
+    path: 'arbitration',
     topics: [
       {
-        title: "How to view invoice milestones in dispute",
-        slug: 'view-invoice-milestones'
+        title: "How to notify the contractor and client of arbitration decision",
+        slug: 'notify-arbitration-decision'
       },
       {
         title: "How to release disputed escrow funds to the contractor or client",
         slug: 'release-disputed-escrow-funds'
       },
       {
-        title: "How to notify the contractor and client of your decision",
-        slug: 'notify-arbitration-decision'
+        title: "How to view invoice milestones in dispute",
+        slug: 'view-invoice-milestones'
       },
     ]
+  },
+  {
+    category: 'Arbitration Policies',
+    path: 'arbitration-policies',
+    topics: [
+      {
+        title: 'LexDAO Arbitration Policy',
+        slug: 'lexdao-arbitration'
+
+      },
+      {
+        title: 'Kleros Arbitration Policy',
+        slug: 'kleros-arbitration'
+      },
+      {
+        title: 'Smart Invoice Arbitration Policy',
+        slug: 'smart-invoice-arbitration'
+      },
+      {
+        title: 'Custom Arbitration Policy',
+        slug: 'custom-arbitration'
+      },
+      {
+        title: 'Arbitration and Escrow Infrastructure',
+        slug: 'arbitration_infra'
+      }
+    ]
+
   },
   {
     category: 'Miscellaneous',
