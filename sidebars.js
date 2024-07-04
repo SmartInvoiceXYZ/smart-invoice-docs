@@ -110,8 +110,8 @@ export const docV3Menu = [
     ]
   },
   {
-    category: 'Arbitration Tutorials',
-    path: 'arbitration',
+    category: 'Arbitrator Tutorials',
+    path: 'tutorials/arbitrator',
     topics: [
       {
         title: "How to notify the contractor and client of arbitration decision",
@@ -128,24 +128,24 @@ export const docV3Menu = [
     ]
   },
   {
-    category: 'Arbitration Policies',
-    path: 'arbitration-policies',
+    category: 'Arbitration',
+    path: 'arbitration',
     topics: [
       {
-        title: 'LexDAO Arbitration Policy',
+        title: 'LexDAO Arbitration',
         slug: 'lexdao-arbitration'
 
       },
       {
-        title: 'Kleros Arbitration Policy',
+        title: 'Kleros Arbitration',
         slug: 'kleros-arbitration'
       },
       {
-        title: 'Smart Invoice Arbitration Policy',
+        title: 'Smart Invoice Arbitration',
         slug: 'smart-invoice-arbitration'
       },
       {
-        title: 'Custom Arbitration Policy',
+        title: 'Custom Arbitration',
         slug: 'custom-arbitration'
       },
       {
