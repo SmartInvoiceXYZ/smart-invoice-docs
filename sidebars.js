@@ -1,15 +1,4 @@
-export const docV1Menu = [
-  'introducing-smart-invoice',
-  'how-does-it-work',
-  'creating-a-smart-invoice',
-  'complete-invoice',
-  'view-existing-invoice',
-  'deposit-or-release',
-  'FAQ',
-  'glossary'
-]
-
-export const docV2Menu = [
+export const docV3Menu = [
   {
     category: 'Getting Started',
     path: 'getting-started',
@@ -125,18 +114,46 @@ export const docV2Menu = [
     path: 'tutorials/arbitrator',
     topics: [
       {
-        title: "How to view invoice milestones in dispute",
-        slug: 'view-invoice-milestones'
+        title: "How to notify the contractor and client of arbitration decision",
+        slug: 'notify-arbitration-decision'
       },
       {
         title: "How to release disputed escrow funds to the contractor or client",
         slug: 'release-disputed-escrow-funds'
       },
       {
-        title: "How to notify the contractor and client of your decision",
-        slug: 'notify-arbitration-decision'
+        title: "How to view invoice milestones in dispute",
+        slug: 'view-invoice-milestones'
       },
     ]
+  },
+  {
+    category: 'Arbitration',
+    path: 'arbitration',
+    topics: [
+      {
+        title: 'LexDAO Arbitration',
+        slug: 'lexdao-arbitration'
+
+      },
+      {
+        title: 'Kleros Arbitration',
+        slug: 'kleros-arbitration'
+      },
+      {
+        title: 'Smart Invoice Arbitration',
+        slug: 'smart-invoice-arbitration'
+      },
+      {
+        title: 'Custom Arbitration',
+        slug: 'custom-arbitration'
+      },
+      {
+        title: 'Arbitration and Escrow Infrastructure',
+        slug: 'arbitration-infra'
+      }
+    ]
+
   },
   {
     category: 'Miscellaneous',

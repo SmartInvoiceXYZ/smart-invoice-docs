@@ -6,7 +6,7 @@ import { marked } from 'marked';
 import { Box, Heading } from '@chakra-ui/react';
 
 export async function getStaticPaths() {
-  const files = fs.readdirSync(path.join('docs-v2', 'getting-started'))
+  const files = fs.readdirSync(path.join('docs-v3', 'getting-started'))
   const paths = files.map(filename => (
     {
       params: {
@@ -23,7 +23,7 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
 
-  const markdown = fs.readFileSync(path.join('docs-v2', 'getting-started', params.slug + '.md'), 'utf-8')
+  const markdown = fs.readFileSync(path.join('docs-v3', 'getting-started', params.slug + '.md'), 'utf-8')
   const { data: frontmatter, content } = matter(markdown)
 
   return {
